@@ -1,16 +1,30 @@
 var skill_list = [
 {
     type : "Figma",
-    result: "B級",
-    skill:["基礎功能：","Auto-layout：","Prototype：","Component："],
-    rank:[3,4,1,1],
+    result: "A級",
+    skill:["基礎應用：","Auto-layout：","Prototype：","Component："],
+    rank:[5,4,4,4],
     img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
 },
 {
     type : "Ai",
+    result: "B級",
+    skill:["基礎應用：","色彩運用：","佈局安排：","層級結構："],
+    rank:[4,3,3,3],
+    img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
+},
+{
+    type : "Ps",
     result: "C級",
-    skill:["基礎繪圖：","色彩運用：","佈局安排：","層級結構："],
-    rank:[4,3,3,4],
+    skill:["基礎應用：","去背功能：","濾鏡功能：","影像修復："],
+    rank:[3,3,3,3],
+    img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
+},
+{
+    type : "Dw",
+    result: "B級",
+    skill:["基礎應用：","程式輔助：","區塊管理：","介面佈局："],
+    rank:[4,4,3,4],
     img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
 }
 ]

@@ -567,6 +567,16 @@ table {
         height: auto;
         justify-content: space-between;
     }
+    .item_002_skill .skill_reset{
+        padding: 0
+    }
+    .skill_title{
+        width: 100%;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-right: 30px;
+    }
     .skill_active{
         border-radius: 5px;
     }
