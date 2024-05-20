@@ -81,6 +81,7 @@ function switch_skill(evt,skill){
     for(i=0 ; i < testing[0].skill.length ; i++){
         var liElement = document.createElement("li");
         liElement.textContent = testing[0].skill[i];
+        liElement.classList.add("main_color");
 
         for(x=0 ; x < testing[0].rank[i] ; x++){
             var spanElement = document.createElement("span");

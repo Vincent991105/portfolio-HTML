@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>portfolio</title>
 </head>
 <body>
@@ -12,25 +13,25 @@
             <a href="" class="logo">
                 <img src="img/img.png" alt="logo">
                 <div class="title">
-                    <h4>作品集123</h4>
-                    <h4>Portfolio</h4>
+                    <h4 class="main_color">作品集</h4>
+                    <h4 class="main_color">Portfolio</h4>
                     <p>made by vincent</p>
                 </div>
             </a>
             <ul class="menu">
-                <li><a href="" class="active">關於我</a></li>
-                <li><a href="">作品</a></li>
-                <li><a href="">聯絡方式</a></li>
+                <li><a href="" class="main_color active">關於我</a></li>
+                <li><a href="" class="main_color">作品</a></li>
+                <li><a href="" class="main_color">聯絡方式</a></li>
             </ul>
         </div>
         <div class="switch_mob">
-            <a id="web" href="http://localhost:8080/portfolio.html?forceDevice=mobile">
+            <a id="web" href="http://localhost:8080/index.html?forceDevice=mobile">
                 切換模式
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4C12.6863 4 10 6.6863 10 10V38C10 41.3138 12.6863 44 16 44H32C35.3138 44 38 41.3138 38 38V10C38 6.6863 35.3138 4 32 4H16ZM14 10C14 8.89544 14.8954 8 16 8H32C33.1046 8 34 8.89544 34 10V38C34 39.1046 33.1046 40 32 40H16C14.8954 40 14 39.1046 14 38V10ZM20 34C18.8954 34 18 34.8954 18 36C18 37.1046 18.8954 38 20 38H28C29.1046 38 30 37.1046 30 36C30 34.8954 29.1046 34 28 34H20Z"/>
                 </svg>
             </a>
-            <a id="mob" href="http://localhost:8080/portfolio.html?forceDevice=mobile">
+            <a id="mob" href="http://localhost:8080/index.html?forceDevice=mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M18.6712 1.53143H1.32875C0.594492 1.53143 0 2.12655 0 2.86018V13.9527C0 14.6864 0.594492 15.2815 1.32875 15.2815H8.59375V15.5775C8.59375 16.3111 7.99926 16.9062 7.265 16.9062H5.3125V18.4687H8.17141H11.8286H14.6875V16.9062H12.735C12.0007 16.9062 11.4062 16.3112 11.4062 15.5775V15.2815H18.6712C19.4055 15.2815 20 14.6864 20 13.9527V2.86018C20 2.12655 19.4055 1.53143 18.6712 1.53143ZM18.125 12.3383C18.125 12.5831 17.9266 12.7814 17.6819 12.7814H2.31813C2.07336 12.7814 1.875 12.5831 1.875 12.3383V3.84956C1.875 3.60479 2.07336 3.40643 2.31813 3.40643H17.6819C17.9267 3.40643 18.125 3.60479 18.125 3.84956V12.3383H18.125Z" fill="white"/>
                   </svg>
@@ -40,13 +41,13 @@
     </div>
     <div class="content">
         <div class="item_001">
-            <span class="item_001_self_photo">
+            <span class="item_001_self_photo" data-aos="flip-left">
                 <img src="img/profile.jpg" alt="profile">
             </span>
             <div class="item_001_self_desc">
                 <ul>
-                    <li class="item_001_self_name">Mr . 陳添榮</li>
-                    <li class="item_001_self_note">
+                    <li class="item_001_self_name"><h1>Mr . 陳添榮</h1></li>
+                    <li class="main_color item_001_self_note">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                             <path d="M15 7.81248C14.137 7.81248 13.4375 8.51203 13.4375 9.37498C13.4375 10.2379 14.137 10.9375 15 10.9375C15.863 10.9375 16.5625 10.2379 16.5625 9.37498C16.5625 8.51203 15.863 7.81248 15 7.81248Z" fill="#6A6A6A"/>
                             <path d="M12.1875 19.375C12.1875 17.8217 13.4468 16.5625 15 16.5625C16.5532 16.5625 17.8125 17.8217 17.8125 19.375C17.8125 20.9282 16.5532 22.1875 15 22.1875C13.4468 22.1875 12.1875 20.9282 12.1875 19.375Z" fill="#6A6A6A"/>
@@ -150,31 +151,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="item_002_exp">
+                <div class="main_color item_002_exp">
                     技能熟練程度：
                     <span id="result" class="item_002_result">A級</span>
                 </div>
                 <ul id="test" class="item_002_result_score">
-                    <li>基礎功能：
+                    <li class="main_color">基礎功能：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Auto-layout：
+                    <li class="main_color">Auto-layout：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Prototype：
+                    <li class="main_color">Prototype：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Component：
+                    <li class="main_color">Component：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
@@ -246,26 +247,26 @@
                     <span id="result" class="item_002_result">B級</span>
                 </div>
                 <ul id="test" class="item_002_result_score">
-                    <li>基礎功能：
+                    <li class="main_color">基礎功能：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Auto-layout：
+                    <li class="main_color">Auto-layout：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Prototype：
+                    <li class="main_color">Prototype：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Component：
+                    <li class="main_color">Component：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
@@ -337,26 +338,26 @@
                     <span id="result" class="item_002_result">B級</span>
                 </div>
                 <ul id="test" class="item_002_result_score">
-                    <li>基礎功能：
+                    <li class="main_color">基礎功能：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Auto-layout：
+                    <li class="main_color">Auto-layout：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Prototype：
+                    <li class="main_color">Prototype：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                     </li>
-                    <li>Component：
+                    <li class="main_color">Component：
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
                         <span class="item_002_skill_point"></span>
@@ -396,26 +397,26 @@
             </div>
             <div id="skill_design_mob" class="item_002_list call">
                 <div class="item_002_skill">
-                    <div onclick="switch_skill(event,'Figma')" class="skill_reset">
-                        <div class="item_002_title">
+                    <div class="skill_reset">
+                        <a href="skill_desc.html" class="item_002_title">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
                                 <path d="M96.7585 38.0832L76.9645 20.2687C71.3255 15.1934 68.506 12.6557 65.046 11.3281L65 25.0005C65 36.7856 65 42.6782 68.661 46.3393C72.3225 50.0005 78.215 50.0005 90 50.0005H107.9C106.087 46.4794 102.842 43.5582 96.7585 38.0832Z" fill="#1C274C"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M69.9999 110H49.9999C31.1437 110 21.7157 110 15.8578 104.142C9.99994 98.2845 9.99994 88.856 9.99994 70V50C9.99994 31.1438 9.99994 21.7157 15.8578 15.8578C21.7157 9.99999 31.1934 9.99999 50.1489 9.99999C53.1789 9.99999 55.6069 9.99999 57.6499 10.0833C57.5829 10.4829 57.5474 10.8906 57.5459 11.3028L57.4999 25.4748C57.4994 30.9603 57.4989 35.8082 58.0244 39.7158C58.5939 43.9514 59.9014 48.1863 63.3579 51.6425C66.8139 55.099 71.0489 56.4065 75.2844 56.976C79.1924 57.5015 84.0399 57.501 89.5254 57.5005H89.9999H109.787C110 60.172 110 63.4505 110 67.8145V70C110 88.856 110 98.2845 104.142 104.142C98.2844 110 88.8559 110 69.9999 110ZM21.2499 57.5C21.2499 51.287 26.2867 46.25 32.4999 46.25H47.4999C53.7129 46.25 58.7499 51.287 58.7499 57.5C58.7499 60.3815 57.6669 63.0095 55.8854 65C57.6669 66.9905 58.7499 69.6185 58.7499 72.5C58.7499 78.713 53.7129 83.75 47.4999 83.75C46.185 83.75 44.9228 83.5245 43.7499 83.11V87.5C43.7499 93.713 38.7131 98.75 32.4999 98.75C26.2867 98.75 21.2499 93.713 21.2499 87.5C21.2499 84.6185 22.3331 81.9905 24.1145 80C22.3331 78.0095 21.2499 75.3815 21.2499 72.5C21.2499 69.6185 22.3331 66.9905 24.1145 65C22.3331 63.0095 21.2499 60.3815 21.2499 57.5ZM28.7499 72.5C28.7499 70.429 30.4289 68.75 32.4999 68.75H36.2499V76.25H32.4999C30.4289 76.25 28.7499 74.571 28.7499 72.5ZM36.2499 61.25H32.4999C30.4289 61.25 28.7499 59.571 28.7499 57.5C28.7499 55.429 30.4289 53.75 32.4999 53.75H36.2499V61.25ZM51.2499 57.5C51.2499 59.571 49.571 61.25 47.4999 61.25H43.7499V53.75H47.4999C49.571 53.75 51.2499 55.429 51.2499 57.5ZM43.7499 72.5C43.7499 70.429 45.4289 68.75 47.4999 68.75C49.571 68.75 51.2499 70.429 51.2499 72.5C51.2499 74.571 49.571 76.25 47.4999 76.25C45.4289 76.25 43.7499 74.571 43.7499 72.5ZM32.4999 83.75H36.2499V87.5C36.2499 89.571 34.571 91.25 32.4999 91.25C30.4289 91.25 28.7499 89.571 28.7499 87.5C28.7499 85.429 30.4289 83.75 32.4999 83.75Z" fill="#1C274C"/>
                               </svg>
                               Figma
-                        </div>
+                        </a>
                     </div>
-                    <div onclick="switch_skill(event,'Ai')" class="skill_reset">
-                        <div class="item_002_title">
+                    <div class="skill_reset">
+                        <a class="item_002_title">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
                                 <path d="M7.5 45.4999C7.5 32.1987 7.5 25.5481 10.0886 20.4677C12.3656 15.9989 15.9989 12.3656 20.4677 10.0886C25.5481 7.5 32.1987 7.5 45.4999 7.5H74.5001C87.8014 7.5 94.452 7.5 99.5321 10.0886C104.001 12.3656 107.634 15.9989 109.911 20.4677C112.5 25.5481 112.5 32.1987 112.5 45.4999V74.5001C112.5 87.8014 112.5 94.452 109.911 99.5321C107.634 104.001 104.001 107.634 99.5321 109.911C94.452 112.5 87.8014 112.5 74.5001 112.5H45.4999C32.1987 112.5 25.5481 112.5 20.4677 109.911C15.9989 107.634 12.3656 104.001 10.0886 99.5321C7.5 94.452 7.5 87.8014 7.5 74.5001V45.4999Z" fill="#330000"/>
                                 <path d="M58.3822 73.4861H42.1114L38.8009 84.0337C38.709 84.4256 38.3482 84.7031 37.9556 84.6836H29.7144C29.2444 84.6836 29.0801 84.4189 29.2213 83.889L43.3087 42.2767C43.4497 41.8432 43.5907 41.3497 43.7314 40.7959C43.9159 39.8317 44.01 38.8522 44.0134 37.8701C43.9729 37.5799 44.2279 37.3235 44.5061 37.3642H55.7059C56.034 37.3642 56.2215 37.4846 56.2691 37.7254L72.2587 83.9614C72.3994 84.4432 72.2587 84.684 71.8361 84.6836H62.679C62.358 84.7204 62.0512 84.5002 61.9747 84.1781L58.3822 73.4861ZM44.6471 64.3834H55.7764C53.9479 58.1351 51.8842 51.969 50.2117 45.6724C48.4072 51.9799 46.4385 58.2619 44.6471 64.3834Z" fill="#FF9A00"/>
                                 <path d="M81.7669 45.0218C81.0484 45.0514 80.3321 44.925 79.6643 44.6513C78.9968 44.3775 78.393 43.962 77.8928 43.4325C77.394 42.8798 77.0063 42.2318 76.7524 41.5249C76.4985 40.8184 76.3834 40.0673 76.4134 39.3146C76.3879 38.5695 76.5158 37.8274 76.7888 37.1364C77.0621 36.4455 77.4743 35.8215 77.9985 35.3051C78.5175 34.794 79.1303 34.3935 79.8015 34.127C80.4724 33.8603 81.1883 33.7329 81.9075 33.7518C83.5984 33.7518 84.9248 34.2696 85.8874 35.3051C86.3734 35.8432 86.751 36.4743 86.9989 37.1623C87.2464 37.8503 87.3596 38.5819 87.3311 39.3146C87.3608 40.0699 87.2419 40.824 86.9816 41.5313C86.7218 42.2385 86.3254 42.885 85.8169 43.4325C85.2855 43.9699 84.651 44.3884 83.9543 44.6621C83.2571 44.9355 82.5124 45.0581 81.7669 45.0218ZM76.9065 83.961V49.4288C76.9065 48.9953 77.0936 48.7785 77.4701 48.7785H86.1341C86.5091 48.7785 86.697 48.9953 86.6974 49.4288V83.961C86.6974 84.4433 86.5095 84.684 86.1341 84.6836H77.5406C77.118 84.6836 76.9065 84.4429 76.9065 83.961Z" fill="#FF9A00"/>
                               </svg>
                               AI
-                        </div>
+                        </a>
                     </div>
-                    <div onclick="switch_skill(event)" class="skill_reset">
+                    <a class="skill_reset">
                         <div class="item_002_title">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
                                 <path d="M7.5 45.4999C7.5 32.1987 7.5 25.5481 10.0886 20.4677C12.3656 15.9989 15.9989 12.3656 20.4677 10.0886C25.5481 7.5 32.1987 7.5 45.4999 7.5H74.5001C87.8014 7.5 94.452 7.5 99.5321 10.0886C104.001 12.3656 107.634 15.9989 109.911 20.4677C112.5 25.5481 112.5 32.1987 112.5 45.4999V74.5001C112.5 87.8014 112.5 94.452 109.911 99.5321C107.634 104.001 104.001 107.634 99.5321 109.911C94.452 112.5 87.8014 112.5 74.5001 112.5H45.4999C32.1987 112.5 25.5481 112.5 20.4677 109.911C15.9989 107.634 12.3656 104.001 10.0886 99.5321C7.5 94.452 7.5 87.8014 7.5 74.5001V45.4999Z" fill="#001E36"/>
@@ -424,8 +425,8 @@
                               </svg>
                               PS
                         </div>
-                    </div>
-                    <div onclick="switch_skill(event)" class="skill_reset">
+                    </a>
+                    <a class="skill_reset">
                         <div class="item_002_title">
                             <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
                                 <path d="M7.5 45.4999C7.5 32.1987 7.5 25.5481 10.0886 20.4677C12.3656 15.9989 15.9989 12.3656 20.4677 10.0886C25.5481 7.5 32.1987 7.5 45.4999 7.5H74.5001C87.8014 7.5 94.452 7.5 99.5321 10.0886C104.001 12.3656 107.634 15.9989 109.911 20.4677C112.5 25.5481 112.5 32.1987 112.5 45.4999V74.5001C112.5 87.8014 112.5 94.452 109.911 99.5321C107.634 104.001 104.001 107.634 99.5321 109.911C94.452 112.5 87.8014 112.5 74.5001 112.5H45.4999C32.1987 112.5 25.5481 112.5 20.4677 109.911C15.9989 107.634 12.3656 104.001 10.0886 99.5321C7.5 94.452 7.5 87.8014 7.5 74.5001V45.4999Z" fill="#470137"/>
@@ -434,7 +435,7 @@
                               </svg>
                               DW
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div id="skill_program_mob" class="item_002_list">
@@ -483,8 +484,17 @@
         </div>
     </div>
     <div class="footer">
-
+        
     </div>
+    <div class="mob_bottom_menu">
+        <a class="bottom_menu" href=""><img src="img/person_svgrepo.com.png" alt="">關於我</a>
+        <a class="bottom_menu" href=""><img src="img/work-agenda_svgrepo.com.png" alt="">作品</a>
+        <a class="bottom_menu" href=""><img src="img/contact-book_svgrepo.com.png" alt="">聯絡方式</a>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="item_002.js"></script>
 </body>
 </html>

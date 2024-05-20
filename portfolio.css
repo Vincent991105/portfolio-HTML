@@ -1,3 +1,8 @@
+/* 筆記：可以將常用的class命名為專屬class(方便日後進行管理) */
+/* Scss Ssas 是一種巢裝式管理的結構 */
+
+
+
 *,*::after,*::before{
 	box-sizing: border-box;
 }
@@ -22,6 +27,8 @@ time, mark, audio, video ,button{
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+    font-family: "Inria Serif","Noto Sans TC";
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,15 +55,24 @@ table {
 	border-spacing: 0;
 }
 
+/* CSS資料庫 */
+.main_color{
+    color: #6A6A6A;
+}
+
 /* header */
 .header{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
     border-bottom: 1px solid #6A6A6A;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top:0px;
+    z-index: 1000;
 }
 .menu_bar{
     display: flex;
@@ -84,8 +100,6 @@ table {
     align-items: flex-start;
 }
 .title h4{
-    color: #6A6A6A;
-    font-family: "Inria Serif";
     font-size: 1.2em;
     font-style: normal;
     font-weight: 700;
@@ -93,7 +107,6 @@ table {
 }
 .title p{
     color: #00B47E;
-    font-family: "Inria Serif";
     font-size: 1.2em;
     font-style: normal;
     font-weight: 700;
@@ -107,8 +120,6 @@ table {
     align-self: stretch;
 }
 .menu a{
-    color: #6A6A6A;
-    font-family: "Inria Serif";
     font-size: 2em;
     font-style: normal;
     font-weight: 700;
@@ -133,7 +144,6 @@ table {
     display: flex;
     align-items: center;
     color: #FFF;
-    font-family: "Inria Serif";
     font-size: 2em;
     font-style: normal;
     font-weight: 700;
@@ -209,7 +219,6 @@ table {
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    color: #6A6A6A;
     font-family: "Noto Sans TC";
     font-size: 2em;
     font-style: normal;
@@ -324,20 +333,15 @@ table {
     gap: 20px;
     align-self: stretch;
 }
-.item_002_skill .skill_reset{
+.skill_reset{
     display: flex;
     padding: 10px;
     align-items: flex-start;
     gap: 10px;
     background: #FFF;
 }
-.item_002_skill .skill_active{
-    display: flex;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 10px;
+.skill_active{
     flex: 1 0 0;
-    background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .item_002_title{
@@ -382,7 +386,6 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #6A6A6A;
     font-family: "Noto Sans TC";
     font-size: 2.3em;
     font-style: normal;
@@ -413,7 +416,6 @@ table {
     height: 38px;
     align-items: center;
     gap: 5px;
-    color: #6A6A6A;
     font-family: "Noto Sans TC";
     font-size: 2em;
     font-style: normal;
@@ -442,7 +444,10 @@ table {
     border-radius: 5px;
     box-shadow: 0 0 4px #B5B5B5;
 }
-
+/* 下方為footer */
+.mob_bottom_menu{
+    display: none;
+}
 
 /* RWD-side */
 @media (max-width:1280px) {
@@ -489,6 +494,7 @@ table {
         padding: 10px;
         overflow: hidden;
         display: block;
+        background-color: #EDEBEB;
     }
     .item_001{
         flex-direction: column;
@@ -499,6 +505,7 @@ table {
         box-shadow: 0px 4px 4px #B5B5B5;
         gap: 10px;
         margin-bottom: 10px;
+        background-color: #FFF;
     }
     .item_001_self_photo{
         width: 100%;
@@ -560,16 +567,47 @@ table {
         height: auto;
         justify-content: space-between;
     }
-    .item_002_skill .skill_reset{
-        padding: 0;
+    .skill_active{
+        border-radius: 5px;
     }
-    .item_002_exp{
-        display: none;
+    .item_002_skill_desc li{
+        font-size: 1.7em;
     }
     .item_002_result_score{
-        display: none;
+        background-color: #FFF;
+        box-shadow: 0px 4px 4px #B5B5B5;
+        border-radius: 5px;
+    }
+    .item_002_result_score li{
+        width: 100%;
+        
     }
     .item_002_image{
-        display:none;
+        flex-direction: column;
     }
+    .item_002_image img{
+        width: 100%;
+        height: 150px;
+    }
+    .mob_bottom_menu{
+        display: flex;
+        height: 50px;
+        width: 100%;
+        position: sticky;
+        bottom:0px;
+        z-index: 1000;
+        background-color: #FFF;
+    }
+    .bottom_menu{
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        font-size: 1.5em;
+        color: #00B47E;
+        font-weight: bold;
+    }
+
 }
