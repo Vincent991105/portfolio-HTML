@@ -63,8 +63,7 @@ app.component('item_vue_001', {
             tag_open: '_blank',
             tag_display: 'yes',
             tag_color: '',
-            tag_create: [
-            ],
+            tag_create: [],
         };
     },
     methods: {
