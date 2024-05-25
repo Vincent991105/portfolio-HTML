@@ -1,10 +1,6 @@
 const app = Vue.createApp({});
 
 app.component('item_vue_001', {
-    template: '#item_vue_001',
-});
-
-app.component('item_vue_002', {
     template: `
     <div class="item_vue_001">
         <div class="item_vue_001_add">
