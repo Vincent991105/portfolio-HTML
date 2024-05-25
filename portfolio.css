@@ -1,8 +1,6 @@
 /* 筆記：可以將常用的class命名為專屬class(方便日後進行管理) */
 /* Scss Ssas 是一種巢裝式管理的結構 */
 
-
-
 *,*::after,*::before{
 	box-sizing: border-box;
 }
@@ -38,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-size: 12px;
+    background-color: #F1F1F1;
 }
 ol, ul {
 	list-style: none;
@@ -58,6 +57,72 @@ table {
 /* CSS資料庫 */
 .main_color{
     color: #6A6A6A;
+}
+
+.font_grey_title{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1.67em;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.grey_reg_16{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1.34em;
+    line-height: normal;
+}
+
+.grey_reg_16_bold{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1.34em;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.grey_reg_14{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1.17em;
+    line-height: normal;
+}
+
+.grey_reg_12{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1em;
+    line-height: normal;
+}
+
+.white_reg_18{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 1.5em;
+    line-height: 24px; /* 133.333% */               
+}
+
+.white_reg_16_bold{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 1.34em;
+    line-height: 24px; /* 133.333% */    
+    font-weight: bold;           
+}
+
+.white_reg_14{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 1.17em;
+    line-height: normal; /* 133.333% */              
+}
+
+.Green_reg_14{
+    color: #36C298;
+    font-family: "Noto Sans TC";
+    font-size: 1.17em;
+    line-height: normal;
 }
 
 /* header */

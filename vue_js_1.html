@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="item_vue_001.css">
+    <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.prod.js"></script>
+    <title>新增標籤Vue.js</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu_bar">
+            <a href="index.html" class="logo">
+                <img src="img/img.png" alt="logo">
+                <div class="title">
+                    <h4 class="main_color">作品集</h4>
+                    <h4 class="main_color">Portfolio</h4>
+                    <p>made by vincent</p>
+                </div>
+            </a>
+            <ul class="menu">
+                <li><a href="" class="main_color active">關於我</a></li>
+                <li><a href="" class="main_color">作品</a></li>
+                <li><a href="" class="main_color">聯絡方式</a></li>
+            </ul>
+        </div>
+        <div class="switch_mob">
+            <a id="web" href="http://localhost:8080/index.html?forceDevice=mobile">
+                切換模式
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 4C12.6863 4 10 6.6863 10 10V38C10 41.3138 12.6863 44 16 44H32C35.3138 44 38 41.3138 38 38V10C38 6.6863 35.3138 4 32 4H16ZM14 10C14 8.89544 14.8954 8 16 8H32C33.1046 8 34 8.89544 34 10V38C34 39.1046 33.1046 40 32 40H16C14.8954 40 14 39.1046 14 38V10ZM20 34C18.8954 34 18 34.8954 18 36C18 37.1046 18.8954 38 20 38H28C29.1046 38 30 37.1046 30 36C30 34.8954 29.1046 34 28 34H20Z"/>
+                </svg>
+            </a>
+            <a id="mob" href="http://localhost:8080/index.html?forceDevice=mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M18.6712 1.53143H1.32875C0.594492 1.53143 0 2.12655 0 2.86018V13.9527C0 14.6864 0.594492 15.2815 1.32875 15.2815H8.59375V15.5775C8.59375 16.3111 7.99926 16.9062 7.265 16.9062H5.3125V18.4687H8.17141H11.8286H14.6875V16.9062H12.735C12.0007 16.9062 11.4062 16.3112 11.4062 15.5775V15.2815H18.6712C19.4055 15.2815 20 14.6864 20 13.9527V2.86018C20 2.12655 19.4055 1.53143 18.6712 1.53143ZM18.125 12.3383C18.125 12.5831 17.9266 12.7814 17.6819 12.7814H2.31813C2.07336 12.7814 1.875 12.5831 1.875 12.3383V3.84956C1.875 3.60479 2.07336 3.40643 2.31813 3.40643H17.6819C17.9267 3.40643 18.125 3.60479 18.125 3.84956V12.3383H18.125Z" fill="white"/>
+                  </svg>
+                  切換
+            </a>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <!-- <div class="item_vue_001">
+            <div class="item_vue_001_add">
+                <div class="item_vue_001_title">
+                    <img src="img/tag_svgrepo.com.svg" alt="tag_icon">
+                    <h2 class="font_grey_title">新增標籤</h2>
+                </div>
+                <div class="item_vue_001_note">
+                    <p class="white_reg_14">將下列資料填寫完畢後，可於左側查看已新增的標籤。</p>
+                </div>
+                <form action="vue_js_1.html" class="item_vue_001_form">
+                    <div>
+                        <label for="tag_name" class="grey_reg_16_bold"><span class="Green_reg_14">1 .</span>標籤名稱</label>
+                        <input type="text" name="tag_name" id="tag_name" placeholder="請協助輸入標籤內容,字數不可大於8字。" class="item_vue_001_textbox">
+                    </div>
+                    <div>
+                        <label for="tag_url" class="grey_reg_16_bold"><span class="Green_reg_14">2 .</span>標籤連結</label>
+                        <input type="url" name="tag_url" id="tag_url" placeholder="請協助輸入連結(ex:http://........com)" class="item_vue_001_textbox">
+                    </div>
+                    <div>
+                        <label for="tag_open" class="grey_reg_16_bold"><span class="Green_reg_14">3 .</span>點選連結後,另開一頁？</label>
+                        <div class="radio_set">
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_open" value="_blank"/> <span class="checkmark"></span>是</label>
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_open" value="_self"/> <span class="checkmark"></span>否</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tag_display" class="grey_reg_16_bold"><span class="Green_reg_14">4 .</span>是否需要顯示‘#’標示？</label>
+                        <div class="radio_set">
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_display" value="yes" class="custom-radio"/> <span class="checkmark"></span>顯示</label>
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_display" value="no" class="custom-radio"/> <span class="checkmark"></span>不顯示</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tag_color" class="grey_reg_16_bold"><span class="Green_reg_14">5 .</span>標籤顏色</label>
+                        <input type="text" name="tag_color" id="tag_color" placeholder="請協助輸入色票編號(#2D2D2D)" class="item_vue_001_textbox">
+                    </div>
+                    <button type="submit" class="vue_js_1_submit_btn white_reg_18">送出</button>
+                </form>
+            </div>
+            <div class="item_vue_001_display">
+                <div class="item_vue_001_title">
+                    <img src="img/tag_svgrepo.com.svg" alt="tag_icon">
+                    <h2 class="font_grey_title">標籤展示</h2>
+                </div>
+                <div class="item_vue_001_tag_list">
+                    <ul>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <item_vue_001></item_vue_001> -->
+        <item_vue_002></item_vue_002>
+    </div>
+    
+    <script type="text/x-template" id="item_vue_001">
+        <div class="item_vue_001">
+            <div class="item_vue_001_add">
+                <div class="item_vue_001_title">
+                    <img src="img/tag_svgrepo.com.svg" alt="tag_icon">
+                    <h2 class="font_grey_title">新增標籤</h2>
+                </div>
+                <div class="item_vue_001_note">
+                    <p class="white_reg_14">將下列資料填寫完畢後，可於左側查看已新增的標籤。</p>
+                </div>
+                <form action="vue_js_1.html" class="item_vue_001_form">
+                    <div>
+                        <label for="tag_name" class="grey_reg_16_bold"><span class="Green_reg_14">1 .</span>標籤名稱</label>
+                        <input type="text" name="tag_name" id="tag_name" placeholder="請協助輸入標籤內容,字數不可大於8字。" class="item_vue_001_textbox">
+                    </div>
+                    <div>
+                        <label for="tag_url" class="grey_reg_16_bold"><span class="Green_reg_14">2 .</span>標籤連結</label>
+                        <input type="url" name="tag_url" id="tag_url" placeholder="請協助輸入連結(ex:http://........com)" class="item_vue_001_textbox">
+                    </div>
+                    <div>
+                        <label for="tag_open" class="grey_reg_16_bold"><span class="Green_reg_14">3 .</span>點選連結後,另開一頁？</label>
+                        <div class="radio_set">
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_open" value="_blank"/> <span class="checkmark"></span>是</label>
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_open" value="_self"/> <span class="checkmark"></span>否</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tag_display" class="grey_reg_16_bold"><span class="Green_reg_14">4 .</span>是否需要顯示‘#’標示？</label>
+                        <div class="radio_set">
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_display" value="yes" class="custom-radio"/> <span class="checkmark"></span>顯示</label>
+                            <label class="radio_text grey_reg_16 custom-radio"><input type="radio" name="tag_display" value="no" class="custom-radio"/> <span class="checkmark"></span>不顯示</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tag_color" class="grey_reg_16_bold"><span class="Green_reg_14">5 .</span>標籤顏色</label>
+                        <input type="text" name="tag_color" id="tag_color" placeholder="請協助輸入色票編號(#2D2D2D)" class="item_vue_001_textbox">
+                    </div>
+                    <button type="submit" class="vue_js_1_submit_btn white_reg_18">送出</button>
+                </form>
+            </div>
+            <div class="item_vue_001_display">
+                <div class="item_vue_001_title">
+                    <img src="img/tag_svgrepo.com.svg" alt="tag_icon">
+                    <h2 class="font_grey_title">標籤展示</h2>
+                </div>
+                <div class="item_vue_001_tag_list">
+                    <ul>
+                        <li>
+                            <a rel="noopener" href="https://seanacnet.com/html/html-a/" target="_blank" class="item_vue_001_tag white_reg_16_bold" style="background: #00B47E;">#馬來西亞人</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="item_vue_001.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+input[type="radio"] {
+    display: none;
+}
+
+/* 自定義的 radio button 外觀 */
+.custom-radio {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 未選中的圓圈樣式 */
+.custom-radio .checkmark {
+    height: 10px;
+    width: 10px;
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 1px solid #6A6A6A;
+}
+
+/* 當 radio button 被選中時，改變圓圈的顏色 */
+.custom-radio input:checked + .checkmark {
+    background-color: #07AC7A;
+    border: #01523a;
+}
+
+/* 選中狀態的圓點樣式 */
+.custom-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* 顯示選中的圓點 */
+.custom-radio input:checked + .checkmark:after {
+    display: block;
+}
+
+/* 選中的圓點具體樣式 */
+.custom-radio .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* 上面是異動radio btn */
+
+.item_vue_001{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.item_vue_001_add{
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.item_vue_001_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+.item_vue_001_note{
+    background: #96BCB1;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+    align-self:stretch;
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+    }
+}
+
+.item_vue_001_form{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .item_vue_001_textbox{
+            display: flex;
+            height: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #6A6A6A;
+        }
+        ::placeholder {
+            color: #D3D3D3;
+            font-family: "Noto Sans TC";
+            font-size: 12px;
+            opacity: 1; /* 設置透明度，1 表示完全不透明 */
+        }
+        .radio_set{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+            margin-left: 10px;
+            input{
+                margin: 0;
+                :active{
+                    color: #07AC7A;
+                }
+            }
+        }
+        .radio_text{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    .vue_js_1_submit_btn{
+        display: flex;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 5px;
+        background: #00B47E;
+    }
+    .vue_js_1_submit_btn:hover{
+        background: #007552;
+    }
+}
+.item_vue_001_display{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.item_vue_001_tag_list{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    ul{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .item_vue_001_tag{
+        display: flex;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 5px;
+    }
+}
