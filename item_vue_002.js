@@ -26,19 +26,18 @@ app.component('item_vue_002', {
         </ul>
         <div class="item_vue_002_list">
             <div class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" >
-                <div class="item_vue_002_img" style="background: url(img/demo_img.jpg) no-repeat;background-size: cover;"></div>
+                <img :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
                 <ul class="item_vue_002_desc">
                     <li>
-                        <h3 class="Green_reg_24">電商網站首頁</h3>
+                        <h3 class="Green_reg_24">{{item.canon_name}}</h3>
                     </li>
                     <li>
                         <span class="Green_reg_18">需求：</span>
-                        <p class="grey_reg_18">此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等。</p>
+                        <p class="grey_reg_18">{{item.canon_desc}}</p>
                     </li>
                     <li>
                         <ul class="item_vue_002_tag_list">
-                            <li class="white_reg_18">#B2B2C網站</li>
-                            <li class="white_reg_18">#B2B2C網站</li>
+                            <li class="white_reg_18" v-for='tag in item.canon_tag'>#{{tag}}</li>
                         </ul>
                     </li>
                 </ul>
@@ -56,7 +55,7 @@ app.component('item_vue_002', {
                         </clipPath>
                         </defs>
                     </svg>
-                    <h2 class="white_reg_24_bold">電商網站首頁</h2>
+                    <h2 class="white_reg_24_bold">{{item.canon_name}}</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
                         <g clip-path="url(#clip0_125_34275)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5714 8.48214C19.6784 8.48214 17.3333 10.8273 17.3333 13.7202C17.3333 16.6132 19.6784 18.9583 22.5714 18.9583C25.4643 18.9583 27.8095 16.6132 27.8095 13.7202C27.8095 10.8273 25.4643 8.48214 22.5714 8.48214ZM14.4762 13.7202C14.4762 9.24936 18.1006 5.625 22.5714 5.625C27.0423 5.625 30.6667 9.24936 30.6667 13.7202C30.6667 18.1911 27.0423 21.8154 22.5714 21.8154C18.1006 21.8154 14.4762 18.1911 14.4762 13.7202Z" fill="white"/>
@@ -104,7 +103,7 @@ app.component('item_vue_002', {
                         canon_name:'電商網站首頁',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['iopenmall','B2B2C商城'],
-                        canon_img:'img/demo.img.jpg',
+                        canon_img:'img/demo_img.jpg',
                     }
                 ],
                 html_canon:[
@@ -112,7 +111,7 @@ app.component('item_vue_002', {
                         canon_name:'前端作品集',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['portfolio','UI+切版'],
-                        canon_img:'img/demo.img.jpg',
+                        canon_img:'img/demo_img.jpg',
                     }
                 ],
                 vue_canon:[
@@ -120,19 +119,19 @@ app.component('item_vue_002', {
                         canon_name:'作品列表',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo.img.jpg',
+                        canon_img:'img/demo_img.jpg',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo.img.jpg',
+                        canon_img:'img/demo_img.jpg',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo.img.jpg',
+                        canon_img:'img/demo_img.jpg',
                     }
                 ],
             }
