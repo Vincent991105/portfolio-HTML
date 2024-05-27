@@ -178,3 +178,13 @@ input[type="radio"] {
         border-radius: 5px;
     }
 }
+
+/* RWD程式 */
+@media (max-width:490px) {
+    .item_vue_001{
+        flex-direction: column;
+    }
+    .item_vue_001_add{
+        width: 100%;
+    }
+}

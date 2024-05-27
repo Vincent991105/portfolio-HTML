@@ -59,11 +59,34 @@ table {
     color: #6A6A6A;
 }
 
+.main_color_2{
+    color: #B5B5B5;
+}
+
+.sub_color{
+    color: #007552;
+}
+
+.sub_color_2{
+    color: #00B47E;
+}
+
+.primary_color_white{
+    color: white;
+}
+
 .font_grey_title{
     color: #6A6A6A;
     font-family: "Noto Sans TC";
     font-size: 1.67em;
     font-weight: bold;
+    line-height: normal;
+}
+
+.grey_reg_18{
+    color: #6A6A6A;
+    font-family: "Noto Sans TC";
+    font-size: 1.5em;
     line-height: normal;
 }
 
@@ -96,18 +119,41 @@ table {
     line-height: normal;
 }
 
+.white_reg_24{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 2em;
+    line-height: normal; /* 133.333% */               
+}
+
+.white_reg_24_bold{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 2em;
+    line-height: normal; /* 133.333% */  
+    font-weight: bold;             
+}
+
 .white_reg_18{
     color: #FFF;
     font-family: "Noto Sans TC";
     font-size: 1.5em;
-    line-height: 24px; /* 133.333% */               
+    line-height: normal; /* 133.333% */               
+}
+
+.white_reg_18_bold{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    font-size: 1.5em;
+    line-height: normal; /* 133.333% */ 
+    font-weight: bold;              
 }
 
 .white_reg_16_bold{
     color: #FFF;
     font-family: "Noto Sans TC";
     font-size: 1.34em;
-    line-height: 24px; /* 133.333% */    
+    line-height: normal; /* 133.333% */    
     font-weight: bold;           
 }
 
@@ -116,6 +162,25 @@ table {
     font-family: "Noto Sans TC";
     font-size: 1.17em;
     line-height: normal; /* 133.333% */              
+}
+.white_reg{
+    color: #FFF;
+    font-family: "Noto Sans TC";
+    line-height: normal; /* 133.333% */  
+}
+
+.Green_reg_24{
+    color: #36C298;
+    font-family: "Noto Sans TC";
+    font-size: 2em;
+    line-height: normal;
+}
+
+.Green_reg_18{
+    color: #36C298;
+    font-family: "Noto Sans TC";
+    font-size: 1.5em;
+    line-height: normal;
 }
 
 .Green_reg_14{
