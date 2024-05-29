@@ -1,6 +1,6 @@
-const app = Vue.createApp({});
+const vue_002 = Vue.createApp({});
 
-app.component('item_vue_002', {
+vue_002.component('item_vue_002', {
     template: 
     `<div class="item_vue_002">
         <div class="item_vue_002_title">
@@ -25,7 +25,7 @@ app.component('item_vue_002', {
             </li>
         </ul>
         <div class="item_vue_002_list">
-            <div class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" >
+            <a class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url">
                 <img :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
                 <ul class="item_vue_002_desc">
                     <li>
@@ -41,7 +41,7 @@ app.component('item_vue_002', {
                         </ul>
                     </li>
                 </ul>
-                <div class="item_vue_002_img_hover">
+                <div class="item_vue_002_img_hover" :href="item.canon_url">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_125_34269)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09527 21.5179C10.9882 21.5179 13.3333 19.1727 13.3333 16.2798C13.3333 13.3868 10.9882 11.0417 8.09527 11.0417C5.20233 11.0417 2.85708 13.3868 2.85708 16.2798C2.85708 19.1727 5.20233 21.5179 8.09527 21.5179ZM16.1904 16.2798C16.1904 20.7506 12.5661 24.375 8.09527 24.375C3.62433 24.375 -4.55379e-05 20.7506 -4.55379e-05 16.2798C-4.55379e-05 11.8089 3.62433 8.18456 8.09527 8.18456C12.5661 8.18456 16.1904 11.8089 16.1904 16.2798Z" fill="white"/>
@@ -70,7 +70,7 @@ app.component('item_vue_002', {
                         </defs>
                     </svg>
                 </div>
-            </div>
+            </a>
         </div>
     </div>`,
 
@@ -87,13 +87,19 @@ app.component('item_vue_002', {
                 {
                     id:'html_canon',
                     menu_name:'HTML作品',
-                    select_desc:'畫面研究及規劃',
+                    select_desc:'畫面切版及CSS',
                     is_active:false,
                 },
                 {
                     id:'vue_canon',
                     menu_name:'vue.js作品',
-                    select_desc:'畫面研究及規劃',
+                    select_desc:'簡易功能套版',
+                    is_active:false,
+                },
+                {
+                    id:'job_canon',
+                    menu_name:'職場作品',
+                    select_desc:'職場時期參與作品',
                     is_active:false,
                 }
             ],
@@ -104,6 +110,7 @@ app.component('item_vue_002', {
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['iopenmall','B2B2C商城'],
                         canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
                     }
                 ],
                 html_canon:[
@@ -112,7 +119,9 @@ app.component('item_vue_002', {
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['portfolio','UI+切版'],
                         canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
                     }
+                    
                 ],
                 vue_canon:[
                     {
@@ -120,19 +129,32 @@ app.component('item_vue_002', {
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
                     }
+                ],
+                job_canon:[
+                    {
+                        canon_name:'iOPEN MALL 開發專案',
+                        canon_desc:'B2B2C開發專案',
+                        canon_tag:['功能規劃','開發測試'],
+                        canon_img:'img/demo_img.jpg',
+                        canon_url:'https://www.google.com/',
+                    }
+                    
                 ],
             }
         };
@@ -143,8 +165,6 @@ app.component('item_vue_002', {
             this.select_type_id = id;
         }
     }
-    
-
 });
 
-app.mount('#content');
+vue_002.mount('#content_2');

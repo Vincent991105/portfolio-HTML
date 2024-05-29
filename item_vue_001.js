@@ -94,4 +94,4 @@ app.component('item_vue_001', {
     },
 });
 
-app.mount('#content');
+app.mount('#content_1');

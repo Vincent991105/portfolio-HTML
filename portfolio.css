@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-size: 12px;
-    background-color: #F1F1F1;
+    background-color: #EDEBEB;
 }
 ol, ul {
 	list-style: none;
@@ -590,6 +590,12 @@ table {
 }
 
 @media (max-width:490px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
     .content{
         max-width: 470px;
     }
@@ -733,7 +739,7 @@ table {
         display: flex;
         height: 50px;
         width: 100%;
-        position: sticky;
+        position: fixed;
         bottom:0px;
         z-index: 1000;
         background-color: #FFF;
