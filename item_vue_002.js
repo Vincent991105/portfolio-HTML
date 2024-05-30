@@ -26,7 +26,8 @@ vue_002.component('item_vue_002', {
         </ul>
         <div class="item_vue_002_list">
             <a class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url">
-                <img :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
+                <img v-if="item.canon_img === ''" src='img/image_pic.png' :alt='item.canon_name' class="item_vue_002_img" >
+                <img v-else :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
                 <ul class="item_vue_002_desc">
                     <li>
                         <h3 class="Green_reg_24">{{item.canon_name}}</h3>
@@ -142,7 +143,7 @@ vue_002.component('item_vue_002', {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo_img.jpg',
+                        canon_img:'',
                         canon_url:'https://www.google.com/',
                     }
                 ],
